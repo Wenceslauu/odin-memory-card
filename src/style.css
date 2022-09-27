@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'american_typewriterregular';
+    src: url('./assets/fonts/american_typewriter_regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/american_typewriter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    max-height: 100%;
+    font-family: 'american_typewriterregular', sans-serif;
+}
+
+.app {
+    padding: 0 20px 20px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px 5px;
+    text-align: center;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-container {
+    padding: 4px;
+    margin-top: -5px;
+    background-color: aqua;
+    border-radius: 0 0 5px 5px;
+}
